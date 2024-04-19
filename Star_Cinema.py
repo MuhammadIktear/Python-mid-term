@@ -28,8 +28,8 @@ class Hall:
         booked_seats = []
         for i in range(num_seats):
             while True:
-                row = int(input(f"Enter the row for seat-{i}: "))
-                col = int(input(f"Enter the column for seat-{i}: "))
+                row = int(input("Enter Seat Row: "))
+                col = int(input("Enter Seat Col: "))
                 if row < 0 or row >= self.rows or col < 0 or col >= self.cols:
                     print("Invalid seat.")
                     continue
